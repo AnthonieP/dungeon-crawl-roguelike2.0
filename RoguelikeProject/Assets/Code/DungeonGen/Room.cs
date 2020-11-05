@@ -8,6 +8,7 @@ public class Room : MonoBehaviour
     public RoomInfo roomInfo;
     public bool isStartRoom;
     public DungeonManager dungeonManager;
+    public MapRoom mapRoom;
     [Header("Doors")]
     public GameObject leftDoor;
     public GameObject rightDoor;
@@ -25,6 +26,7 @@ public class Room : MonoBehaviour
         if (isStartRoom)
         {
             dungeonManager.startRoom = this;
+            mapRoom = dungeonManager.map.gameObject.GetComponent<MapRoom>();
             StartRoomGenerateRooms();
         }
     }
@@ -47,6 +49,7 @@ public class Room : MonoBehaviour
                     leftRoom.GetComponent<Room>().rightDoor.SetActive(true);
                     leftRoom.GetComponent<Room>().rightWall.SetActive(false);
                     leftRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.itemRoomPicture, leftRoomPos / roomInfo.roomDis);
                     leftRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentItemRoomAmount++;
                 }
@@ -57,6 +60,7 @@ public class Room : MonoBehaviour
                     leftRoom.GetComponent<Room>().rightDoor.SetActive(true);
                     leftRoom.GetComponent<Room>().rightWall.SetActive(false);
                     leftRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.shopRoomPicture, leftRoomPos / roomInfo.roomDis);
                     leftRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentShopRoomAmount++;
                 }
@@ -67,6 +71,7 @@ public class Room : MonoBehaviour
                     leftRoom.GetComponent<Room>().rightDoor.SetActive(true);
                     leftRoom.GetComponent<Room>().rightWall.SetActive(false);
                     leftRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, leftRoomPos / roomInfo.roomDis);
                     leftRoom.GetComponent<Room>().GenerateRooms();
 
                 }
@@ -91,6 +96,7 @@ public class Room : MonoBehaviour
                     rightRoom.GetComponent<Room>().leftDoor.SetActive(true);
                     rightRoom.GetComponent<Room>().leftWall.SetActive(false);
                     rightRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.itemRoomPicture, rightRoomPos / roomInfo.roomDis);
                     rightRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentItemRoomAmount++;
                 }
@@ -101,6 +107,7 @@ public class Room : MonoBehaviour
                     rightRoom.GetComponent<Room>().leftDoor.SetActive(true);
                     rightRoom.GetComponent<Room>().leftWall.SetActive(false);
                     rightRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.shopRoomPicture, rightRoomPos / roomInfo.roomDis);
                     rightRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentShopRoomAmount++;
                 }
@@ -111,6 +118,7 @@ public class Room : MonoBehaviour
                     rightRoom.GetComponent<Room>().leftDoor.SetActive(true);
                     rightRoom.GetComponent<Room>().leftWall.SetActive(false);
                     rightRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, rightRoomPos / roomInfo.roomDis);
                     rightRoom.GetComponent<Room>().GenerateRooms();
                 }
                 dungeonManager.currentRoomAmount++;
@@ -133,6 +141,7 @@ public class Room : MonoBehaviour
                     upRoom.GetComponent<Room>().downDoor.SetActive(true);
                     upRoom.GetComponent<Room>().downWall.SetActive(false);
                     upRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.itemRoomPicture, upRoomPos / roomInfo.roomDis);
                     upRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentItemRoomAmount++;
                 }
@@ -143,6 +152,7 @@ public class Room : MonoBehaviour
                     upRoom.GetComponent<Room>().downDoor.SetActive(true);
                     upRoom.GetComponent<Room>().downWall.SetActive(false);
                     upRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.shopRoomPicture, upRoomPos / roomInfo.roomDis);
                     upRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentShopRoomAmount++;
                 }
@@ -153,6 +163,7 @@ public class Room : MonoBehaviour
                     upRoom.GetComponent<Room>().downDoor.SetActive(true);
                     upRoom.GetComponent<Room>().downWall.SetActive(false);
                     upRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, upRoomPos / roomInfo.roomDis);
                     upRoom.GetComponent<Room>().GenerateRooms();
                 }
                 dungeonManager.currentRoomAmount++;
@@ -175,6 +186,7 @@ public class Room : MonoBehaviour
                     downRoom.GetComponent<Room>().upDoor.SetActive(true);
                     downRoom.GetComponent<Room>().upWall.SetActive(false);
                     downRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.itemRoomPicture, downRoomPos / roomInfo.roomDis);
                     downRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentItemRoomAmount++;
 
@@ -186,6 +198,7 @@ public class Room : MonoBehaviour
                     downRoom.GetComponent<Room>().upDoor.SetActive(true);
                     downRoom.GetComponent<Room>().upWall.SetActive(false);
                     downRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.shopRoomPicture, downRoomPos / roomInfo.roomDis);
                     downRoom.GetComponent<Room>().GenerateRooms();
                     dungeonManager.currentShopRoomAmount++;
 
@@ -197,6 +210,7 @@ public class Room : MonoBehaviour
                     downRoom.GetComponent<Room>().upDoor.SetActive(true);
                     downRoom.GetComponent<Room>().upWall.SetActive(false);
                     downRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+                    dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, downRoomPos / roomInfo.roomDis);
                     downRoom.GetComponent<Room>().GenerateRooms();
                 }
                 dungeonManager.currentRoomAmount++;
@@ -215,6 +229,7 @@ public class Room : MonoBehaviour
         leftRoom.GetComponent<Room>().rightDoor.SetActive(true);
         leftRoom.GetComponent<Room>().rightWall.SetActive(false);
         leftRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+        dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, leftRoomPos / roomInfo.roomDis);
         dungeonManager.currentRoomAmount++;
 
         //Make room on right.
@@ -223,6 +238,7 @@ public class Room : MonoBehaviour
         rightRoom.GetComponent<Room>().leftDoor.SetActive(true);
         rightRoom.GetComponent<Room>().leftWall.SetActive(false);
         rightRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+        dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, rightRoomPos / roomInfo.roomDis);
         dungeonManager.currentRoomAmount++;
 
         //Make room on up.
@@ -231,6 +247,7 @@ public class Room : MonoBehaviour
         upRoom.GetComponent<Room>().downDoor.SetActive(true);
         upRoom.GetComponent<Room>().downWall.SetActive(false);
         upRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+        dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, upRoomPos / roomInfo.roomDis);
         dungeonManager.currentRoomAmount++;
 
         //Make room on down.
@@ -239,6 +256,7 @@ public class Room : MonoBehaviour
         downRoom.GetComponent<Room>().upDoor.SetActive(true);
         downRoom.GetComponent<Room>().upWall.SetActive(false);
         downRoom.GetComponent<Room>().dungeonManager = dungeonManager;
+        dungeonManager.map.CreateNewMapRoom(dungeonManager.map.roomPicture, downRoomPos / roomInfo.roomDis);
         dungeonManager.currentRoomAmount++;
 
 
@@ -262,6 +280,7 @@ public class Room : MonoBehaviour
             GameObject leftRoom = Instantiate(roomInfo.bossRoom, leftRoomPos, Quaternion.identity);
             leftRoom.GetComponent<Room>().rightDoor.SetActive(true);
             leftRoom.GetComponent<Room>().rightWall.SetActive(false);
+            dungeonManager.map.CreateNewMapRoom(dungeonManager.map.bossRoomPicture, leftRoomPos / roomInfo.roomDis);
             dungeonManager.currentRoomAmount++;
             dungeonManager.bossRoomSpawned = true;
 
@@ -276,6 +295,7 @@ public class Room : MonoBehaviour
             GameObject rightRoom = Instantiate(roomInfo.bossRoom, rightRoomPos, Quaternion.identity);
             rightRoom.GetComponent<Room>().leftDoor.SetActive(true);
             rightRoom.GetComponent<Room>().leftWall.SetActive(false);
+            dungeonManager.map.CreateNewMapRoom(dungeonManager.map.bossRoomPicture,rightRoomPos / roomInfo.roomDis);
             dungeonManager.currentRoomAmount++;
             dungeonManager.bossRoomSpawned = true;
 
@@ -290,6 +310,7 @@ public class Room : MonoBehaviour
             GameObject upRoom = Instantiate(roomInfo.bossRoom, upRoomPos, Quaternion.identity);
             upRoom.GetComponent<Room>().downDoor.SetActive(true);
             upRoom.GetComponent<Room>().downWall.SetActive(false);
+            dungeonManager.map.CreateNewMapRoom(dungeonManager.map.bossRoomPicture, upRoomPos / roomInfo.roomDis);
             dungeonManager.currentRoomAmount++;
             dungeonManager.bossRoomSpawned = true;
 
@@ -304,6 +325,7 @@ public class Room : MonoBehaviour
             GameObject downRoom = Instantiate(roomInfo.bossRoom, downRoomPos, Quaternion.identity);
             downRoom.GetComponent<Room>().upDoor.SetActive(true);
             downRoom.GetComponent<Room>().upWall.SetActive(false);
+            dungeonManager.map.CreateNewMapRoom(dungeonManager.map.bossRoomPicture, downRoomPos / roomInfo.roomDis);
             dungeonManager.currentRoomAmount++;
             dungeonManager.bossRoomSpawned = true;
 

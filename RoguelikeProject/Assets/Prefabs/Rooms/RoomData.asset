@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomDis: 10
   roomSpawnChance: 30
-  itemRoomSpawnChance: 5
-  shopRoomSpawnChance: 5
+  itemRoomSpawnChance: 10
+  shopRoomSpawnChance: 10
   roomsDoorLeft:
   - {fileID: 2350964425199241497, guid: a60243996ad86994eae2e9de9f58b5ec, type: 3}
   roomsDoorRight:

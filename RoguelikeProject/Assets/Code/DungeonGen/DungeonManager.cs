@@ -11,6 +11,7 @@ public class DungeonManager : MonoBehaviour
     public int itemRoomAmount;
     public int shopRoomAmount;
     public int framesAfterRestartCheck;
+    public DungeonMap map;
     [Header("DebugData")]
     public int framesElapsed;
     public bool genComplete;
