@@ -12,14 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2bce638d7bac947b0b2aaf299a6407, type: 3}
   m_Name: RoomDataLvl1
   m_EditorClassIdentifier: 
-  roomDis: 0
-  roomSpawnChance: 0
-  itemRoomSpawnChance: 0
-  shopRoomSpawnChance: 0
-  roomsDoorLeft: []
-  roomsDoorRight: []
-  roomsDoorUp: []
-  roomsDoorDown: []
+  roomDis: 30
+  roomSpawnChance: 30
+  itemRoomSpawnChance: 5
+  shopRoomSpawnChance: 5
+  roomsDoorLeft:
+  - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
+  - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
+  - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
+  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
+  - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
+  roomsDoorRight:
+  - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
+  - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
+  - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
+  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
+  - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
+  roomsDoorUp:
+  - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
+  - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
+  - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
+  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
+  - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
+  roomsDoorDown:
+  - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
+  - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
+  - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
+  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
+  - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
   itemRoom: {fileID: 0}
   shopRoom: {fileID: 0}
   bossRoom: {fileID: 0}
