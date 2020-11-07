@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a2bce638d7bac947b0b2aaf299a6407, type: 3}
+  m_Name: RoomDataLvl1
+  m_EditorClassIdentifier: 
+  roomDis: 0
+  roomSpawnChance: 0
+  itemRoomSpawnChance: 0
+  shopRoomSpawnChance: 0
+  roomsDoorLeft: []
+  roomsDoorRight: []
+  roomsDoorUp: []
+  roomsDoorDown: []
+  itemRoom: {fileID: 0}
+  shopRoom: {fileID: 0}
+  bossRoom: {fileID: 0}
