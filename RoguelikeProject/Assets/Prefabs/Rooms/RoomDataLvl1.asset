@@ -20,26 +20,23 @@ MonoBehaviour:
   - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
   - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
   - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
-  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
   - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
   roomsDoorRight:
   - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
   - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
   - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
-  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
   - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
   roomsDoorUp:
   - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
   - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
   - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
-  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
   - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
   roomsDoorDown:
   - {fileID: 1256782713651900618, guid: 3c28fc2d3ab2b0a4c81f9a4776b6d559, type: 3}
   - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
   - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
-  - {fileID: 5501171323783104234, guid: 94a08f3d2fb637746bb56770440b2766, type: 3}
   - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
-  itemRoom: {fileID: 0}
-  shopRoom: {fileID: 0}
-  bossRoom: {fileID: 0}
+  itemRoom: {fileID: 7003307528884335101, guid: c2d92dd8be60b1143b82cec16f23dce0,
+    type: 3}
+  shopRoom: {fileID: 278913635984908422, guid: b715ccd6dcd88144ea027fa2ae80a416, type: 3}
+  bossRoom: {fileID: 839157499597942682, guid: d7571a67d0ec3e9489d6d5e1741b5b16, type: 3}
