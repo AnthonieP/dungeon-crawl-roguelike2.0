@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a2bce638d7bac947b0b2aaf299a6407, type: 3}
+  m_Name: RoomData
+  m_EditorClassIdentifier: 
+  roomDis: 10
+  roomSpawnChance: 30
+  itemRoomSpawnChance: 10
+  shopRoomSpawnChance: 10
+  roomsDoorLeft:
+  - {fileID: 2350964425199241497, guid: a60243996ad86994eae2e9de9f58b5ec, type: 3}
+  roomsDoorRight:
+  - {fileID: 2350964425199241497, guid: a60243996ad86994eae2e9de9f58b5ec, type: 3}
+  roomsDoorUp:
+  - {fileID: 2350964425199241497, guid: a60243996ad86994eae2e9de9f58b5ec, type: 3}
+  roomsDoorDown:
+  - {fileID: 2350964425199241497, guid: a60243996ad86994eae2e9de9f58b5ec, type: 3}
+  itemRoom: {fileID: 7003307528884335101, guid: c2d92dd8be60b1143b82cec16f23dce0,
+    type: 3}
+  shopRoom: {fileID: 5557799323049970123, guid: 63b99e5237e463b47bbe8293b939f1ce,
+    type: 3}
+  bossRoom: {fileID: 839157499597942682, guid: d7571a67d0ec3e9489d6d5e1741b5b16, type: 3}
