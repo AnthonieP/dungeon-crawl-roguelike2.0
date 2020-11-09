@@ -39,4 +39,5 @@ MonoBehaviour:
   itemRoom: {fileID: 7003307528884335101, guid: c2d92dd8be60b1143b82cec16f23dce0,
     type: 3}
   shopRoom: {fileID: 278913635984908422, guid: b715ccd6dcd88144ea027fa2ae80a416, type: 3}
-  bossRoom: {fileID: 839157499597942682, guid: d7571a67d0ec3e9489d6d5e1741b5b16, type: 3}
+  bossRoom: {fileID: 7842445547274164546, guid: 27d26ba600a29e747aac08f1568eefd7,
+    type: 3}

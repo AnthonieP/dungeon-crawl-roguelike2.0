@@ -860,7 +860,7 @@ MonoBehaviour:
   leftWall: {fileID: 1534734397709078644}
   rightWall: {fileID: 339741011990783098}
   upWall: {fileID: 7812137737615908166}
-  downWall: {fileID: 7477099335456052595}
+  downWall: {fileID: 7158389425025153697}
 --- !u!65 &7123766330171460710
 BoxCollider:
   m_ObjectHideFlags: 0

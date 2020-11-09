@@ -90,7 +90,11 @@ MonoBehaviour:
   roomDistance: 100
   parent: {fileID: 0}
   dungeonManager: {fileID: 0}
-  roomPicture: {fileID: 0}
-  itemRoomPicture: {fileID: 0}
-  shopRoomPicture: {fileID: 0}
-  bossRoomPicture: {fileID: 0}
+  roomPicture: {fileID: 692614355200666959, guid: 56af4c747f4617143b10e4633580cb1a,
+    type: 3}
+  itemRoomPicture: {fileID: 3204733999754629389, guid: 2e93f9881c0c6e44bbf0f08cee5ec9d6,
+    type: 3}
+  shopRoomPicture: {fileID: 3932983446653568482, guid: 9d537f605dfeecd44a2ca651243e00b6,
+    type: 3}
+  bossRoomPicture: {fileID: 8270913412898544388, guid: 401b2445a3054524aaa54f8a7d3b2e08,
+    type: 3}
