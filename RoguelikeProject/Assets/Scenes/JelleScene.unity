@@ -369,7 +369,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1317284005}
+    m_TransformParent: {fileID: 1456968034}
     m_Modifications:
     - target: {fileID: 3291471182002309251, guid: 344e7effc0948404b8c5e296d474b245,
         type: 3}
@@ -394,17 +394,17 @@ PrefabInstance:
     - target: {fileID: 5349523144199033333, guid: 344e7effc0948404b8c5e296d474b245,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5349523144199033333, guid: 344e7effc0948404b8c5e296d474b245,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5349523144199033333, guid: 344e7effc0948404b8c5e296d474b245,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5349523144199033333, guid: 344e7effc0948404b8c5e296d474b245,
         type: 3}
@@ -485,12 +485,17 @@ PrefabInstance:
         type: 3}
       propertyPath: parent
       value: 
-      objectReference: {fileID: 1317284001}
+      objectReference: {fileID: 1456968033}
     - target: {fileID: 7034742773139960436, guid: 344e7effc0948404b8c5e296d474b245,
         type: 3}
       propertyPath: dungeonManager
       value: 
       objectReference: {fileID: 732765482}
+    - target: {fileID: 7034742773139960436, guid: 344e7effc0948404b8c5e296d474b245,
+        type: 3}
+      propertyPath: roomDistance
+      value: 55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 344e7effc0948404b8c5e296d474b245, type: 3}
 --- !u!1 &1114128929
@@ -669,6 +674,11 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 892037442}
+    - target: {fileID: 8823604986995185173, guid: e0c2721161bcbf746a60ebade0a75c93,
+        type: 3}
+      propertyPath: framesAfterRestartCheck
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8823604986995185178, guid: e0c2721161bcbf746a60ebade0a75c93,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -816,7 +826,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 892037441}
+  - {fileID: 1456968034}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -837,3 +847,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128482afe8524504daad85636f1844dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1456968033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456968034}
+  m_Layer: 5
+  m_Name: Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1456968034
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456968033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children:
+  - {fileID: 892037441}
+  m_Father: {fileID: 1317284005}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
