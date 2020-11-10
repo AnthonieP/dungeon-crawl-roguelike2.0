@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 66
+  controlID: 138
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 67
+  controlID: 139
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 68
+  controlID: 140
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 316
     height: 651
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -240,8 +240,8 @@ MonoBehaviour:
     y: 0
     width: 662
     height: 651
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -423,23 +423,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 4847ecfff847ecfffc47ecff4e48ecff6659ecff329decffa6f0f1ff2226f2ff10b9f2ffded6f2ff6c04f3ff46a1f9ff4ca1f9ff8aadf9ff2034fcff2234fcff0a20fdffbaf7fdff9404feff9a04feffd008feffb621ffffc421ffffaa2dffff74d8ffff2adaffff048d0200
+      m_SelectedIDs: ae5cf6ff
+      m_LastClickedID: -631634
+      m_ExpandedIDs: aebaffff3075000034750000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Lights
-        m_OriginalName: Lights
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 476126
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.617094, y: 18.905153, z: -2.8136034}
+    m_Target: {x: -123.315674, y: -100.60713, z: -33.75276}
     speed: 2
-    m_Value: {x: 4.617094, y: 18.905153, z: -2.8136034}
+    m_Value: {x: -123.315674, y: -100.60713, z: -33.75276}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -533,13 +533,13 @@ MonoBehaviour:
     m_GridAxis: 0
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.45364055, y: -0.3703388, z: 0.21495217, w: 0.7815721}
+    m_Target: {x: 0.20152646, y: -0.7740674, z: 0.30014145, w: 0.5197344}
     speed: 2
-    m_Value: {x: 0.4582267, y: -0.36147988, z: 0.21126258, w: 0.7840464}
+    m_Value: {x: -0.53532916, y: -0.0015020823, z: 0.00095028715, w: -0.8446417}
   m_Size:
-    m_Target: 17.689098
+    m_Target: 107.890335
     speed: 2
-    m_Value: 16.927366
+    m_Value: 10.917849
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -693,34 +693,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Art/Materials
+    - Assets/Prefabs/Rooms/Level1
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Art/Materials
+  - Assets/Prefabs/Rooms/Level1
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\antho\OneDrive\Documenten\GitHub\dungeon-crawl-roguelike2.0\RoguelikeProject
+  m_LastProjectPath: D:\Work\Projects\Dungeon Crawl Roguelike\dungeon-crawl-roguelike2.0\RoguelikeProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 61}
-    m_SelectedIDs: 2a690000
-    m_LastClickedID: 26922
-    m_ExpandedIDs: 00000000186900001a6900001c6900001e69000020690000286900003669000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a4790000
+    m_LastClickedID: 31140
+    m_ExpandedIDs: 000000009c7900009e790000a0790000a2790000a4790000b8790000aa88000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PolygonDungeon
-      m_OriginalName: PolygonDungeon
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 26924
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -734,7 +734,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000186900001a6900001c6900001e69000020690000
+    m_ExpandedIDs: 000000009c7900009e790000a0790000a2790000a4790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

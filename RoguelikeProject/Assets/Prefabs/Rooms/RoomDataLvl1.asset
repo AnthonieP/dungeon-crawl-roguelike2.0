@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2bce638d7bac947b0b2aaf299a6407, type: 3}
   m_Name: RoomDataLvl1
   m_EditorClassIdentifier: 
-  roomDis: 30
+  roomDis: 45
   roomSpawnChance: 30
   itemRoomSpawnChance: 10
   shopRoomSpawnChance: 10
