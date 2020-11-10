@@ -36,7 +36,8 @@ MonoBehaviour:
   - {fileID: 5861456117728985651, guid: 29f8c34f430ec5249b96b6649672f29b, type: 3}
   - {fileID: 4844831036200063428, guid: 597496253dffb7d47a9cb282298d2e41, type: 3}
   - {fileID: 8285069573950222310, guid: b9c8d8462b4a9db49a9fc8a3bc316dd4, type: 3}
-  itemRoom: {fileID: 278913635984908422, guid: b715ccd6dcd88144ea027fa2ae80a416, type: 3}
+  itemRoom: {fileID: 2452799320510061896, guid: 93df7c766ef097f478f1aa867003e73b,
+    type: 3}
   shopRoom: {fileID: 278913635984908422, guid: b715ccd6dcd88144ea027fa2ae80a416, type: 3}
   bossRoom: {fileID: 7842445547274164546, guid: 27d26ba600a29e747aac08f1568eefd7,
     type: 3}
