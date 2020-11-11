@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 2827
+  controlID: 155
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 2787
+  controlID: 108
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 2788
+  controlID: 87
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c8f2c0ff18fbffff62fbffff66fbffff2034000032340000
+      m_ExpandedIDs: 72b7ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -313,9 +313,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.5262192, y: 13.298416, z: -4.5177727}
+    m_Target: {x: -19.496191, y: 11.397614, z: 4.7621574}
     speed: 2
-    m_Value: {x: 0.5262192, y: 13.298416, z: -4.5177727}
+    m_Value: {x: -19.496191, y: 11.397614, z: 4.7621574}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -365,9 +365,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.0017116306, y: -0.7740999, z: 0.6330577, w: -0.0020930215}
   m_Size:
-    m_Target: 104.98644
+    m_Target: 75.15192
     speed: 2
-    m_Value: 104.98644
+    m_Value: 75.15192
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -576,20 +576,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Work\Projects\Dungeon Crawl Roguelike\dungeon-crawl-roguelike2.0\RoguelikeProject
+  m_LastProjectPath: C:\Users\antho\OneDrive\Documenten\GitHub\dungeon-crawl-roguelike2.0\RoguelikeProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 109}
-    m_SelectedIDs: 50640000
-    m_LastClickedID: 25680
-    m_ExpandedIDs: 000000000264000006640000086400000a6400000c6400000e6400001064000000ca9a3b
+    scrollPos: {x: 0, y: 61}
+    m_SelectedIDs: 86820000
+    m_LastClickedID: 33414
+    m_ExpandedIDs: 0000000086820000888200008a8200008c8200008e8200009082000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -617,7 +617,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000264000006640000086400000a6400000c6400000e64000000ca9a3b
+    m_ExpandedIDs: 0000000086820000888200008a8200008c8200008e82000090820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,9 +642,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1ed00100
-    m_LastClickedInstanceID: 118814
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000863d000082340000aa430000203d00007a3d00009095010020f000006e420000de410000004e00008250000020b20000746d000000000000140701007639000056670000a2ac0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -865,8 +865,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 987
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -908,5 +908,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 118814
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
