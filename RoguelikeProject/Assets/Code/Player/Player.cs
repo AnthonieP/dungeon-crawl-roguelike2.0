@@ -11,10 +11,16 @@ public class Player : MonoBehaviour
     public float attackPower;
     public float attackSpeed;
     [Header("Camera")]
+    public Camera camera;
     public CameraC cameraCode;
     public Vector3 currentCamPos;
+    [Header("Orb")]
+    public GameObject projectileOrb;
+    public GameObject projectileOrbBase;
+    public float orbRotateSpeed;
     [Header("Debug")]
     public float roomDis;
+    RaycastHit hit;
 
     private void Start()
     {
@@ -23,6 +29,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        RotateOrb();
     }
 
     void FixedUpdate()
@@ -35,6 +42,17 @@ public class Player : MonoBehaviour
     {
         Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         transform.Translate(input * playerSpeed * Time.deltaTime);
+    }
+
+    void RotateOrb()
+    {
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit))
+        {
+            Vector3 targetDirection = new Vector3(hit.point.x, projectileOrbBase.transform.position.y, hit.point.z) - projectileOrbBase.transform.position;
+            Vector3 newDirection = Vector3.RotateTowards(projectileOrbBase.transform.forward, targetDirection, orbRotateSpeed * Time.deltaTime, 0.0f);
+            projectileOrbBase.transform.rotation = Quaternion.LookRotation(newDirection);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

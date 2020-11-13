@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
+  m_MinSize: {x: 880, y: 492}
+  m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 427
+  controlID: 7613
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 363
+  controlID: 7614
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 364
+  controlID: 7588
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -313,9 +313,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.6339133, y: 12.464981, z: -5.2337627}
+    m_Target: {x: 1.9412994, y: -68.873566, z: 62.163857}
     speed: 2
-    m_Value: {x: -1.6339133, y: 12.464981, z: -5.2337627}
+    m_Value: {x: 1.9412994, y: -68.873566, z: 62.163857}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -361,13 +361,13 @@ MonoBehaviour:
     m_GridAxis: 0
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.010313837, y: -0.771145, z: 0.6364534, w: -0.012496564}
+    m_Target: {x: 0.5037607, y: -0.07881835, z: 0.046223182, w: 0.85899746}
     speed: 2
-    m_Value: {x: -0.010313837, y: -0.771145, z: 0.6364534, w: -0.012496564}
+    m_Value: {x: 0.5037606, y: -0.07881833, z: 0.04622317, w: 0.8589973}
   m_Size:
-    m_Target: 53.545174
+    m_Target: 261.69968
     speed: 2
-    m_Value: 53.545174
+    m_Value: 261.69968
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -576,20 +576,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Rooms
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Rooms
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\antho\OneDrive\Documenten\GitHub\dungeon-crawl-roguelike2.0\RoguelikeProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c8b0000
-    m_LastClickedID: 35612
-    m_ExpandedIDs: 00000000d0640000d2640000d4640000d6640000f064000000ca9a3b
+    m_SelectedIDs: f0640000
+    m_LastClickedID: 25840
+    m_ExpandedIDs: 00000000d0640000d2640000d4640000d664000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,8 +642,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 74350000
-    m_LastClickedInstanceID: 13684
+    m_SelectedInstanceIDs: fc340000
+    m_LastClickedInstanceID: 13564
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000863d000082340000aa430000203d00007a3d00009095010020f000006e420000de410000004e00008250000020b20000746d000000000000140701007639000056670000a2ac0000
     m_RenameOverlay:
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 420000
+  m_LastSelectedObjectID: 152768
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -908,5 +908,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 13684
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: 13564
+  m_LastVerticalScrollValue: 797
