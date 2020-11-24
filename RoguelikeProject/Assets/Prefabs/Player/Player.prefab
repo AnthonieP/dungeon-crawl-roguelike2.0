@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3dd6418ddba3574394fa7b12f56af6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 13
+  money: 0
   maxHealth: 100
   curHealth: 100
   speed: 10
@@ -416,7 +416,7 @@ MonoBehaviour:
   orbRotateSpeed: 50
   healthBar: {fileID: 0}
   tooltip: {fileID: 7286890084564293133}
-  roomDis: 23
+  roomDis: 24
 --- !u!54 &8678618121849664875
 Rigidbody:
   m_ObjectHideFlags: 0

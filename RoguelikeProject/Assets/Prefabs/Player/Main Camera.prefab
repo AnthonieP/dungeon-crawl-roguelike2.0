@@ -97,4 +97,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 31.42, z: -8.86}
-  lerpSpeed: 0.05
+  lerpSpeed: 17

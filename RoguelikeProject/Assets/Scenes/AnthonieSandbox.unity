@@ -913,12 +913,12 @@ PrefabInstance:
     - target: {fileID: 8823604986995185173, guid: e0c2721161bcbf746a60ebade0a75c93,
         type: 3}
       propertyPath: minRoomAmount
-      value: 1000
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8823604986995185173, guid: e0c2721161bcbf746a60ebade0a75c93,
         type: 3}
       propertyPath: maxRoomAmount
-      value: 1100
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8823604986995185173, guid: e0c2721161bcbf746a60ebade0a75c93,
         type: 3}

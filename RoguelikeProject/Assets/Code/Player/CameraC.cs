@@ -9,6 +9,6 @@ public class CameraC : MonoBehaviour
     
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, target, lerpSpeed);
+        transform.position = Vector3.Lerp(transform.position, target, lerpSpeed * Time.deltaTime);
     }
 }

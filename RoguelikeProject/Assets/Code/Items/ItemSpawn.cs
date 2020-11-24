@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemSpawn : MonoBehaviour
 {
     public bool isShop;
     public GameObject[] itemsToSpawn;
     public GameObject spawnedItem;
+    
 
     private void Start()
     {
@@ -20,6 +22,8 @@ public class ItemSpawn : MonoBehaviour
         if (isShop)
         {
             itemSpawned.moneyUp -= itemSpawned.price;
+            itemSpawned.priceText.gameObject.SetActive(true);
+            itemSpawned.priceText.text = ((itemSpawned.moneyUp - itemSpawned.price) * -1).ToString();
         }
     }
 }

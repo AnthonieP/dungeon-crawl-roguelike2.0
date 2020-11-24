@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemBase : MonoBehaviour
 {
     [Header("Settings")]
     public Vector3 rotateSpeed;
     public int price;
-    [Header("StatUps")]
+    [Header("Stat-Ups")]
     public float speedUp;
     public float attackPowerUp;
     public float attackSpeedUp;
@@ -15,6 +16,10 @@ public class ItemBase : MonoBehaviour
     public float maxHealthUp;
     public float curHealthUp;
     public int moneyUp;
+    [Header("Canvas")]
+    public Text priceText;
+
+
 
     private void Update()
     {

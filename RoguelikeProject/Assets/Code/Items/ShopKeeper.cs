@@ -23,14 +23,17 @@ public class ShopKeeper : MonoBehaviour
     public void ResetShop()
     {
         Player player = GameObject.FindObjectOfType<Player>();
-        player.money -= resetPrice;
-        resetPrice += Random.Range(minResetPriceUp, maxResetPriceUp);
-        for (int i = 0; i < shopItems.Length; i++)
-        {
-            Destroy(shopItems[i].spawnedItem);
-            shopItems[i].SpawnItem();
-        }
-        priceText.text = resetPrice.ToString();
+        if(player.money - resetPrice >= 0){
+            player.money -= resetPrice;
+            resetPrice += Random.Range(minResetPriceUp, maxResetPriceUp);
+            for (int i = 0; i < shopItems.Length; i++)
+            {
+                Destroy(shopItems[i].spawnedItem);
+                shopItems[i].SpawnItem();
+            }
+            priceText.text = resetPrice.ToString();
 
+
+        }
     }
 }
