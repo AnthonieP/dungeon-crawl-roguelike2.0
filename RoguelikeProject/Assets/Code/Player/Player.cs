@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     [Header("Canvas")]
     public GameObject healthBar;
     public GameObject tooltip;
+    public GameObject menu;
+    bool menuActive = false;
     [Header("Debug")]
     public float roomDis;
     RaycastHit hit;
@@ -62,7 +64,10 @@ public class Player : MonoBehaviour
                 }
             }
         }
-
+        if (Input.GetButtonDown("Cancel"))
+        {
+            TurnOnOffMenu();
+        }
 
 
         InteractableIsClose();
@@ -130,6 +135,21 @@ public class Player : MonoBehaviour
     void Die()
     {
 
+    }
+
+    public void TurnOnOffMenu()
+    {
+        menuActive = !menuActive;
+        menu.SetActive(menuActive);
+
+        if (menuActive)
+        {
+            Time.timeScale = 0.000000001f;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

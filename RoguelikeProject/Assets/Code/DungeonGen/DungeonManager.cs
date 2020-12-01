@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DungeonManager : MonoBehaviour
@@ -21,6 +22,9 @@ public class DungeonManager : MonoBehaviour
     public bool bossRoomSpawned;
     public Room startRoom;
     public List<GameObject> roomList = new List<GameObject>();
+    [Header("Canvas")]
+    public Image blackScreen;
+    public float blackScreenAppearSpeed;
     
     void Update()
     {
@@ -52,6 +56,21 @@ public class DungeonManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
             genComplete = true;
+            if(blackScreen != null)
+            {
+                blackScreen.color += new Color(0, 0, 0, 10);
+            }
+        }
+        if (genComplete)
+        {
+            if(blackScreen != null)
+            {
+                if(blackScreen.color.a > 0)
+                {
+                    blackScreen.color -= new Color(0, 0, 0, Time.deltaTime * blackScreenAppearSpeed);
+                }
+
+            }
         }
     }
 }
