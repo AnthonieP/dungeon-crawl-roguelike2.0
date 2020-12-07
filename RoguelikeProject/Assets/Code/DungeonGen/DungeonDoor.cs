@@ -6,5 +6,6 @@ public class DungeonDoor : MonoBehaviour
 {
     public Transform roomBehindDoor;
     public Vector3 doorDirection;
-    
+    public bool passible = true;
+    public GameObject closedDoor;
 }

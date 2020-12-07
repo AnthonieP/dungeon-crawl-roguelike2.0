@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 461008}
   - component: {fileID: 3307344}
   - component: {fileID: 2394750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Brazier_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public float speed;
     public float damage;
+    public float knockback;
     public float time = 1;
     public bool piercing = false;
     public GameObject destroyParticle;
@@ -38,8 +39,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "enemy")
+        if (other.transform.tag == "Enemy")
         {
+            transform.GetComponent<AI>().TakeDamage(damage);
+            transform.GetComponent<AI>().TakeKnockback(knockback, transform.forward);
             if (!piercing)
             {
                 DestroyProjectile();

@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public float attackSpeed;
     public float attackTime;
     public float fireRate;
+    public float knockback;
     [Header("ItemStuff")]
     public float interactRange;
     [Header("Camera")]
@@ -102,6 +103,7 @@ public class Player : MonoBehaviour
         curProjectile.damage = attackPower;
         curProjectile.speed = attackSpeed;
         curProjectile.time = attackTime;
+        curProjectile.knockback = knockback;
     }
 
     void InteractableIsClose()
@@ -156,8 +158,13 @@ public class Player : MonoBehaviour
     {
         if(collision.transform.tag == "Door")
         {
-            cameraCode.target = collision.transform.GetComponent<DungeonDoor>().roomBehindDoor.position + currentCamPos;
-            transform.position += collision.transform.GetComponent<DungeonDoor>().doorDirection * roomDis;
+            if (collision.transform.GetComponent<DungeonDoor>().passible)
+            {
+                cameraCode.target = collision.transform.GetComponent<DungeonDoor>().roomBehindDoor.position + currentCamPos;
+                transform.position += collision.transform.GetComponent<DungeonDoor>().doorDirection * roomDis;
+                collision.transform.GetComponent<DungeonDoor>().roomBehindDoor.GetComponent<Room>().SetRoom();
+            }
+
         }
     }
 }

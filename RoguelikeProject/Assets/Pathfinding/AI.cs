@@ -15,7 +15,17 @@ public class AI : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
     public float rotateSpeed;
+    [Header("Stats")]
+    public float health;
+    public float damage;
+    public float knockbackMul;
+    [Header("Misc")]
+    public EnemySpawn spawnPoint;
 
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         pathUpdateTimeTime -= Time.deltaTime;
@@ -33,6 +43,29 @@ public class AI : MonoBehaviour
                 Move();
             }
         }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if(health < .1f)
+        {
+            Die();
+        }
+    }
+
+    public void TakeKnockback(float knockback, Vector3 knockbackDirection)
+    {
+        transform.GetComponent<Rigidbody>().AddForce(knockbackDirection * (knockback * knockbackMul));
+    }
+
+    void Die()
+    {
+        spawnPoint.EnemyDied();
+
+
+
+        Destroy(gameObject);
     }
 
     void NewPath()

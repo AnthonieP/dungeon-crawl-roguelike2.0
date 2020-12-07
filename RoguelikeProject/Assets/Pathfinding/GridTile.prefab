@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3391715586384352041}
   - component: {fileID: 2667247000892133009}
   - component: {fileID: 2381444148619020486}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: GridTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,6 @@ MonoBehaviour:
   dfStart: 0
   dfEnd: 0
   totalDis: 0
-  totalDisTraveled: 0
   checkHeight: 0
   aStar: {fileID: 0}
   prevTile: {fileID: 0}

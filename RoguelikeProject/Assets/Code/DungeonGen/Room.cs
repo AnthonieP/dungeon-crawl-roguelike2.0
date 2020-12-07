@@ -14,6 +14,9 @@ public class Room : MonoBehaviour
     public GameObject rightDoor;
     public GameObject upDoor;
     public GameObject downDoor;
+    [Header("Enemy Spawns")]
+    public EnemySpawn[] enemySpawns;
+    public AStar aStar;
     [Header("Debug")]
     public DungeonDoor leftDoorDebug;
     public DungeonDoor rightDoorDebug;
@@ -28,6 +31,46 @@ public class Room : MonoBehaviour
             dungeonManager.startRoom = this;
             mapRoom = dungeonManager.map.gameObject.GetComponent<MapRoom>();
             StartRoomGenerateRooms();
+        }
+    }
+
+    public void SetRoom()
+    {
+        for (int i = 0; i < enemySpawns.Length; i++)
+        {
+            enemySpawns[i].SpawnEnemy();
+        }
+    }
+
+    public void CheckRoomUnlock()
+    {
+        bool allEnemiesDied = true;
+        for (int i = 0; i < enemySpawns.Length; i++)
+        {
+            if (!enemySpawns[i].enemyDied)
+            {
+                allEnemiesDied = false;
+            }
+        }
+
+        if (allEnemiesDied)
+        {
+            if(leftDoorDebug != null)
+            {
+                leftDoorDebug.closedDoor.SetActive(false);
+            }
+            if (rightDoorDebug != null)
+            {
+                rightDoorDebug.closedDoor.SetActive(false);
+            }
+            if (upDoorDebug != null)
+            {
+                upDoorDebug.closedDoor.SetActive(false);
+            }
+            if (downDoorDebug != null)
+            {
+                downDoorDebug.closedDoor.SetActive(false);
+            }
         }
     }
 

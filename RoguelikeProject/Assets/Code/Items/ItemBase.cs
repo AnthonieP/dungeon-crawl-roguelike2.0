@@ -13,6 +13,7 @@ public class ItemBase : MonoBehaviour
     public float attackPowerUp;
     public float attackSpeedUp;
     public float rangeUp;
+    public float knockbackUp;
     public float maxHealthUp;
     public float curHealthUp;
     public int moneyUp;
@@ -35,6 +36,7 @@ public class ItemBase : MonoBehaviour
             player.attackPower += attackPowerUp;
             player.attackSpeed += attackSpeedUp;
             player.attackTime += rangeUp;
+            player.knockback += knockbackUp;
             player.maxHealth += maxHealthUp;
             player.curHealth += curHealthUp;
             player.money += moneyUp;
