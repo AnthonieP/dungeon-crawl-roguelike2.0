@@ -78,16 +78,17 @@ public class AStar : MonoBehaviour
         }
     }
 
-    public void Pathfind(Transform target, Transform start)
+    public void Pathfind(GridTile startTilet, GridTile endTilet, Transform start)
     {
+        print("pathfind");
         pathmade = false;
         tilesToCheckNum = 0;
         path = new List<GridTile>();
         tilesToCheck = new List<GridTile>();
-        startTile = null;
-        endTile = null;
+        startTile = startTilet.transform.gameObject;
+        endTile = endTilet.transform.gameObject;
 
-        UpdateGrid(target, start);
+        //UpdateGrid(target, start);
         int x = 0;
         int y = 0;
         for (int i = 0; i < (gridSize.x * gridSize.y); i++)
@@ -109,6 +110,7 @@ public class AStar : MonoBehaviour
 
     public void LookForPath(Transform ai)
     {
+        print("lookforpath");
         int tilecheckCount = tilesToCheck.Count;
         for (int i = tilesToCheckNum; i < tilecheckCount; i++)
         {

@@ -71,7 +71,7 @@ public class AI : MonoBehaviour
     void NewPath()
     {
         waypoints = new List<Vector3>();
-        pathfinding.Pathfind(target.transform, transform);
+        pathfinding.Pathfind(GetStartTile(), GetEndTile(), transform);
         waypointcount = 3;
     }
 
@@ -81,6 +81,36 @@ public class AI : MonoBehaviour
         {
             waypointcount += 1;
         }
+    }
+
+    GridTile GetStartTile()
+    {
+        Collider[] colliders = Physics.OverlapBox(transform.position, new Vector3(.5f, 10, .5f));
+        GridTile startTile = null;
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if(colliders[i].transform.tag == "GridTile")
+            {
+                startTile = colliders[i].GetComponent<GridTile>();
+            }
+        }
+
+        return startTile;
+    }
+
+    GridTile GetEndTile()
+    {
+        Collider[] colliders = Physics.OverlapBox(target.transform.position, new Vector3(.5f, 10, .5f));
+        GridTile startTile = null;
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].transform.tag == "GridTile")
+            {
+                startTile = colliders[i].GetComponent<GridTile>();
+            }
+        }
+
+        return startTile;
     }
 
     void Move()

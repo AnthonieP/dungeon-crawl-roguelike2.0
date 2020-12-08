@@ -18,7 +18,36 @@ public class GridTile : MonoBehaviour
 
     private void Start()
     {
+
         startColor = transform.GetComponent<MeshRenderer>().material.color;
+
+
+        aStar = transform.parent.GetComponent<AStar>();
+        check = false;
+        transform.GetComponent<MeshRenderer>().material.color = startColor;
+        prevTile = null;
+
+        Collider[] colliders = Physics.OverlapBox(new Vector3(transform.position.x, transform.position.y + checkHeight * .5f, transform.position.z), new Vector3(aStar.tileSize * .5f, checkHeight, aStar.tileSize * .5f));
+
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            for (int i2 = 0; i2 < aStar.layersThatCountAsObstacle.Length; i2++)
+            {
+                if (colliders[i].gameObject.layer == LayerMask.NameToLayer(aStar.layersThatCountAsObstacle[i2]))
+                {
+                    transform.GetComponent<MeshRenderer>().material.color = red;
+                    totalDis = 1000000;
+                    dfEnd = 1000000;
+                    dfStart = 1000000;
+                    check = true;
+                }
+                
+            }
+
+        }
+
+        UpdateNeighboring();
+
     }
     void CheckForObstacle(Transform target, Transform start)
     {
@@ -34,15 +63,8 @@ public class GridTile : MonoBehaviour
         {
             for (int i2 = 0; i2 < aStar.layersThatCountAsObstacle.Length; i2++)
             {
-                if (colliders[i].gameObject.layer == LayerMask.NameToLayer(aStar.layersThatCountAsObstacle[i2]))
-                {
-                    transform.GetComponent<MeshRenderer>().material.color = red;
-                    totalDis = 1000000;
-                    dfEnd = 1000000;
-                    dfStart = 1000000;
-                    check = true;
-                }
-                else if(colliders[i].transform == target)
+                
+                if(colliders[i].transform == target)
                 {
                     if(aStar.endTile == null)
                     {
@@ -95,7 +117,6 @@ public class GridTile : MonoBehaviour
 
     public void FindLowestdfEnd()
     {
-        UpdateNeighboring();
         neighboring.Sort((x, y) => x.dfEnd.CompareTo(y.dfEnd));
 
         List<GridTile> tempTiles = new List<GridTile>();

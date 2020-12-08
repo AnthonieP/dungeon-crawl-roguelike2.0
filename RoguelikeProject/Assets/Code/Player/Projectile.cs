@@ -41,8 +41,8 @@ public class Projectile : MonoBehaviour
     {
         if (other.transform.tag == "Enemy")
         {
-            transform.GetComponent<AI>().TakeDamage(damage);
-            transform.GetComponent<AI>().TakeKnockback(knockback, transform.forward);
+            other.transform.GetComponent<AI>().TakeDamage(damage);
+            other.transform.GetComponent<AI>().TakeKnockback(knockback, transform.forward);
             if (!piercing)
             {
                 DestroyProjectile();
