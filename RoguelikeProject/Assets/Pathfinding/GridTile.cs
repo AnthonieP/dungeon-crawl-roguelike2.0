@@ -137,8 +137,9 @@ public class GridTile : MonoBehaviour
 
     public void MakePath()
     {
+        //print("makePath tile");
         transform.GetComponent<MeshRenderer>().material.color = green;
-        aStar.path.Add(transform.GetComponent<GridTile>());
+        aStar.path.Add(this);
         if(prevTile != null)
         {
             prevTile.MakePath();
