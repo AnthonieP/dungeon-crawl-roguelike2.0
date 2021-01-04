@@ -94,7 +94,6 @@ public class AI : MonoBehaviour
                 startTile = colliders[i].GetComponent<GridTile>();
             }
         }
-
         return startTile;
     }
 
@@ -107,6 +106,7 @@ public class AI : MonoBehaviour
             if (colliders[i].transform.tag == "GridTile")
             {
                 startTile = colliders[i].GetComponent<GridTile>();
+
             }
         }
 

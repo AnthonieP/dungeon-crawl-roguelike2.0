@@ -23,10 +23,6 @@ public class AStar : MonoBehaviour
         CreateGrid();
     }
 
-    void Update()
-    {
-        
-    }
 
     void CreateGrid()
     {
@@ -80,7 +76,6 @@ public class AStar : MonoBehaviour
 
     public void Pathfind(GridTile startTilet, GridTile endTilet, Transform start)
     {
-        print("pathfind");
         pathmade = false;
         tilesToCheckNum = 0;
         path = new List<GridTile>();
@@ -88,11 +83,17 @@ public class AStar : MonoBehaviour
         startTile = startTilet.transform.gameObject;
         endTile = endTilet.transform.gameObject;
 
+
+
         //UpdateGrid(target, start);
         int x = 0;
         int y = 0;
         for (int i = 0; i < (gridSize.x * gridSize.y); i++)
         {
+            if(tiles[y, x].GetComponent<GridTile>().totalDis < 1000)
+            {
+                tiles[y, x].GetComponent<GridTile>().check = false;
+            }
             tiles[y, x].GetComponent<GridTile>().CalculateDistances();
             if (x == (int)gridSize.x - 1)
             {
@@ -110,11 +111,9 @@ public class AStar : MonoBehaviour
 
     public void LookForPath(Transform ai)
     {
-        print("lookforpath");
         int tilecheckCount = tilesToCheck.Count;
         for (int i = tilesToCheckNum; i < tilecheckCount; i++)
         {
-
             if (tilesToCheck[i].transform == endTile.transform)
             {
                 tilesToCheck[i].MakePath();
@@ -124,6 +123,8 @@ public class AStar : MonoBehaviour
                 {
                     ai.GetComponent<AI>().waypoints.Add(path[i2].transform.position);
                 }
+
+                
             }
 
             tilesToCheckNum = i;
