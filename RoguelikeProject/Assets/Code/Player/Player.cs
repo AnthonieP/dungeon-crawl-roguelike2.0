@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [Header("PlayerInfo")]
     public int money;
+    public float playerRotateSpeed;
     [Header("Stats")]
     public float maxHealth;
     public float curHealth;
@@ -81,8 +82,33 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        transform.Translate(input * speed * Time.deltaTime);
+        Vector3 targetDirection = new Vector3(transform.position.x + Input.GetAxis("Horizontal"), transform.position.y, transform.position.z + Input.GetAxis("Vertical")) - transform.position;
+        Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, playerRotateSpeed * Time.deltaTime, 0.0f);
+        transform.rotation = Quaternion.LookRotation(newDirection);
+
+        float tempSpeed = 0;
+        float tempHor = Input.GetAxis("Horizontal");
+        float tempVer = Input.GetAxis("Vertical");
+        if(tempHor < 0)
+        {
+            tempHor *= -1;
+        }
+        if(tempVer < 0)
+        {
+            tempVer *= -1;
+        }
+        if(tempHor > tempVer)
+        {
+            tempSpeed = tempHor;
+        }
+        else
+        {
+            tempSpeed = tempVer;
+        }
+        transform.Translate(0,0, tempSpeed * speed * Time.deltaTime);
+
+
+
     }
 
     void RotateOrb()
